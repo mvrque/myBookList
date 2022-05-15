@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>My book list</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-3">BOOK LIST</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label class="col-form-label mt-3" for="inputDefault">TITLE</label>
+                <input type="text" class="form-control" placeholder="Book title" id="title">
+            </div>
+            <div class="form-group">
+                <label class="col-form-label mt-4" for="inputDefault"> AUTHOR</label>
+                <input type="text" class="form-control" placeholder="Book author" id="author">
+            </div>
+            <div class="form-group">
+                <label class="col-form-label mt-4" for="inputDefault">ISBN#</label>
+                <input type="text" class="form-control" placeholder="Book isbn" id="isbn">
+            </div>
+        <th scope="col"><input type="submit" class="btn btn-primary mt-4 mb-4 btn-block" id="button-addon2" value="Add a book">
+        </form>
+        <table class="table table-hover">
+            <thead class="table table-hover">
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">ISBN#</th>
+                </tr>
+                <tbody id="book-list">
+
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+</html>
